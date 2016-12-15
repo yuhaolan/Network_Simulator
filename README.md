@@ -45,7 +45,6 @@ Design ideas:
 
 	
 	2.4 I use Node* array[150] this array of pointers to simulate each node. 
-		
 		2.4.1 Sending packet: I use bytes array to simulate packet. I create 1900 packets to simulate send, if you want you can generate more. But size of input and output queue is only 30, so it will have more packet loss. 
 		
 		2.4.2 How to send: I first finish how to send packet between nodes that are connect directly. Then I cut path from source node to destination node into many times sending packet packet between nodes that are connect directly. I check each node routing table and now next node I can go.
